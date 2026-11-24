@@ -87,6 +87,7 @@ function renderMap(body){
  let h=document.createElement('h2');h.className='question';h.textContent='Map Location Challenge';body.append(h);
  let p=document.createElement('div');p.className='mapquestion';p.textContent=(mapIndex+1)+' of 20 · '+item.q;body.append(p);
  let instruction=document.createElement('div');instruction.className='map-instruction';instruction.textContent='Click the matching area on the unlabeled airport diagram, then choose Check Answer.';body.append(instruction);
+ let ref=document.createElement('div');ref.className='maptools';ref.innerHTML='<a href="https://cdn.torontopearson.com/-/media/project/pearson/content/airport-employees/passes-and-permits/avop/2024/avop-site-map-april-2024" target="_blank" rel="noopener noreferrer">Open the official site map in a new tab for reference</a>';body.append(ref);
  let canvas=document.createElement('div');canvas.className='map-canvas';
  canvas.innerHTML='<svg viewBox="0 0 900 560" role="img" aria-label="Unlabeled schematic airport map. Click a region to answer." xmlns="http://www.w3.org/2000/svg">'+
  '<rect x="18" y="18" width="864" height="524" rx="44" fill="#e6eef0" stroke="#6d8291" stroke-width="3"/>'+
