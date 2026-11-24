@@ -1,18 +1,19 @@
 # YYZ AVOP DA Practice
 
-A static English-language practice app for the non-map portions of the DA written test. The app includes 26 airside-rules questions and three illustrated diagram questions. It no longer includes map questions; the home screen links to the official GTAA site map.
+A static English-language practice app for the DA test. The test format is 29 written questions plus one map question (30 total). This app practices the written portion with a randomized bank of 74 airside-rules questions and six illustrated diagram questions; the map question is prepared separately with the official GTAA site map link.
 
 ## Practice format
 
-- Mock Exam: 26 randomized rules questions and three randomized diagram questions (29 total).
+- Mock Exam: 26 randomized rules questions and three randomized diagram questions (29 written questions).
+- The question bank contains 74 rules questions and six diagram questions. Questions from the previous attempt on that device are skipped when enough fresh questions remain.
 - Rule question order and answer choices are randomized each session.
-- Up to three errors are allowed in this practice set.
+- The overall exam format allows up to three errors across 30 questions, and all map items must be correct. The map question is not scored by this app.
 - Missed questions show the selected answer, correct answer, and explanation after completion.
 - Progress and scores are not saved.
 
 ## Home-screen installation
 
-The app includes a web manifest, Android app icons, an Apple touch icon, and the `AVOP DA` short name for Add to Home Screen.
+The app includes a web manifest, Android app icons, an Apple touch icon, and the `AVOP DA` short name for Add to Home Screen. The home-screen icon features enlarged `AVOP` and `DA` lettering.
 
 ## Difficulty and source basis
 

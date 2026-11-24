@@ -9,9 +9,9 @@
  <path d="M164 489 213 306h86l49 183" fill="#061f34" fill-opacity=".78"/>
  <path d="m212 489 34-183h20l34 183" fill="#e6eef2" fill-opacity=".92"/>
  <path d="m250 451 5-33h4l5 33m-15-72 4-28h8l4 28" fill="none" stroke="url(#gold)" stroke-width="7" stroke-linecap="round"/>
- <rect x="76" y="83" width="360" height="233" rx="30" fill="#092f50" stroke="#a6dfe4" stroke-opacity=".78" stroke-width="3"/>
+ <rect x="76" y="83" width="360" height="259" rx="30" fill="#092f50" stroke="#a6dfe4" stroke-opacity=".78" stroke-width="3"/>
  <text x="256" y="163" text-anchor="middle" fill="#a6dfe4" font-family="Arial,sans-serif" font-size="34" font-weight="700" letter-spacing="8">AIRPORT</text>
- <text x="256" y="244" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="77" font-weight="800" letter-spacing="2">AVOP</text>
- <rect x="182" y="263" width="148" height="66" rx="22" fill="url(#gold)"/>
- <text x="256" y="312" text-anchor="middle" fill="#082c4b" font-family="Arial,sans-serif" font-size="48" font-weight="900" letter-spacing="4">DA</text>
+ <text x="256" y="246" text-anchor="middle" fill="#ffffff" font-family="Arial,sans-serif" font-size="98" font-weight="800" letter-spacing="1">AVOP</text>
+ <rect x="169" y="263" width="174" height="76" rx="24" fill="url(#gold)"/>
+ <text x="256" y="319" text-anchor="middle" fill="#082c4b" font-family="Arial,sans-serif" font-size="59" font-weight="900" letter-spacing="4">DA</text>
 </svg>
