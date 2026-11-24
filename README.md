@@ -1,12 +1,12 @@
 # YYZ AVOP DA Practice
 
-A static web app. Open `index.html` in a browser; no installation is required. The app does not bundle the GTAA map or manual figures. Map questions link to GTAA’s official April 2024 site map in a separate tab, and the three diagram questions use original simplified illustrations.
+A static web app. Open `index.html` in a browser; no installation is required. The app includes the user-provided YYZ map JPEG for the map-click test and does not bundle manual figures. Map questions link to GTAA’s official April 2024 site map in a separate tab, and the three diagram questions use original simplified illustrations.
 
 ## Format
 
 - Mock Exam: 26 multiple-choice airside-rule questions, three diagram questions, and 20 map-location checks under Question 30.
 - The main screen links directly to GTAA’s official April 2024 site map. The mock exam still includes all 20 map-location checks within Question 30.
-- Questions, answer options, and map locations are randomized each session.
+- Question order and choices, and map-location order, are randomized each session.
 - Passing requires all map locations correct and no more than three errors on the other questions.
 - Progress and scores are not saved.
 
