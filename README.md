@@ -9,7 +9,7 @@ A static web app. Open `index.html` in a browser; no installation is required. T
 - The mock exam includes the same 20 location checks as Question 30.
 - Question order and choices, and map-location order, are randomized each session.
 - Passing requires all map locations correct and no more than three errors on the other questions.
-- Progress and scores are not saved.
+- Progress and scores are not saved. The home screen Update button checks the deployed version and reloads when a newer version is available.
 
 ## Difficulty and source basis
 
