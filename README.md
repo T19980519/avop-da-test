@@ -6,7 +6,7 @@ A static web app. Open `index.html` in a browser; no installation is required. T
 
 - Mock Exam: 26 multiple-choice airside-rule questions, three diagram questions, and 20 map-location checks under Question 30.
 - Quick Practice: 12 rule questions, one randomly selected diagram question, and all 20 map-location checks.
-- Map Test Only: a standalone 20-question map session with its own score and retry option. It emphasizes 13 apron/taxiway entrance markers, including AD, AE, AF, AG, AT, AJ, AK, AL, AM, DQ, DR, DT, and DV; it also includes terminal/apron features and the North/South Service Roads. Other roads and highways are excluded. Answer by clicking a location on a simple, unlabeled schematic, with the official site map available in a separate tab for reference.
+- Map Test Only: a standalone 20-question map session with its own score and retry option. It emphasizes 13 apron/taxiway entrance markers, including AD, AE, AF, AG, AT, AJ, AK, AL, AM, DQ, DR, DT, and DV; it also includes terminal/apron features and the North/South Service Roads. Other roads and highways are excluded. Answer using four-choice questions, with the official site map available in a separate tab for reference.
 - Questions, answer options, and map locations are randomized each session.
 - Passing requires all map locations correct and no more than three errors on the other questions.
 - Progress and scores are not saved.
