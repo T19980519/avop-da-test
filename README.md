@@ -11,6 +11,7 @@ A static English-language practice app for the DA test. The official test format
 - Rule question order and answer choices are randomized each session.
 - The overall exam format allows up to three errors across 30 questions, and all map items must be correct. The map question is not scored by this app.
 - Missed questions show the selected answer, correct answer, and explanation after completion.
+- Results include a prominent **Review All Answers** button that opens every question, the selected and correct answers, and its explanation.
 - Progress and scores are not saved.
 
 ## Home-screen installation
