@@ -16,7 +16,7 @@
 <p class="small" style="margin-top:17px">Scoring: all 20 map locations must be correct. Up to three errors are allowed across the other 29 questions. This is a study simulation; confirm current exam rules with GTAA.</p>
 </section>
 <section id="quiz" class="card hidden"><div class="qhead"><span id="qnum" class="qnum"></span><span id="qcat" class="tag"></span></div><div class="progress"><i id="progress"></i></div><div id="qbody"></div><div class="row" style="justify-content:space-between;margin-top:20px"><button class="btn secondary" onclick="quitQuiz()">Exit</button><button id="next" class="btn" disabled onclick="advance()">Continue</button></div></section>
-<section id="result" class="card hidden"></section><footer class="foot"><div>Study references: Airport Traffic Directives – AVOP DA (2026) and YYZ Site Map (April 2024). This independent practice app is not produced or endorsed by GTAA. Follow current official directives and airside signage.</div><div class="footer-meta"><span>Version 1.4.1</span><span class="copyright">© 2026 AVOP-DA-TEST Developed by SEOKWOO KIM</span></div></footer>
+<section id="result" class="card hidden"></section><footer class="foot"><div>Study references: Airport Traffic Directives – AVOP DA (2026) and YYZ Site Map (April 2024). This independent practice app is not produced or endorsed by GTAA. Follow current official directives and airside signage.</div><div class="footer-meta"><span>Version 1.4.2</span><span class="copyright">© 2026 AVOP-DA-TEST Developed by SEOKWOO KIM</span></div></footer>
 </main>
 <script>
 const bank=[
@@ -52,23 +52,23 @@ const diagrams=[
 {q:'Three vehicles approach as shown. What is their priority order?',type:'rowconnect',o:['A, then B, then C','B, then C, then A','C, then A, then B','A, then C, then B'],a:0,e:'A in the connecting corridor goes first. B has the next priority. C is last because it faces a stop marking.'}
 ];
 const mapQs=[
-{q:'On the map, click near entrance marker AD beside Cargo East.',label:'Entrance AD — Cargo East',x:610,y:425,r:55},
-{q:'Click near entrance marker AE, just north of the Air Canada apron and southeast of Cargo East.',label:'Entrance AE — north of the Air Canada apron',x:678,y:250,r:55},
-{q:'Click the northwestern edge of the Air Canada gate area, where marker AF is located.',label:'Entrance AF — northwest Air Canada gate area',x:650,y:175,r:52},
-{q:'Click the area west of the Air Canada gate area near Pier A Compound, marker AG.',label:'Entrance AG — west of the Air Canada gate area',x:620,y:235,r:55},
-{q:'Click near the north end of Terminal 3’s North Apron, marker AT.',label:'Entrance AT — north end of Terminal 3 North Apron',x:850,y:310,r:52},
-{q:'Click the western side of the North Apron below Terminal 3, marker AJ.',label:'Entrance AJ — west side of the North Apron',x:820,y:390,r:52},
-{q:'Click between the north apron gates of Terminals 3 and 1, marker AK.',label:'Entrance AK — between the north apron gates',x:790,y:320,r:52},
-{q:'Click the western edge of Terminal 1’s North Apron, marker AL.',label:'Entrance AL — west edge of Terminal 1 North Apron',x:730,y:250,r:52},
-{q:'Click near the south end of Terminal 1’s apron beside the vehicle corridors, marker AM.',label:'Entrance AM — south end of Terminal 1 apron',x:760,y:345,r:55},
-{q:'Click the southeastern side of Terminal 1’s South Apron, marker DQ.',label:'Entrance DQ — southeast Terminal 1 South Apron',x:820,y:460,r:55},
-{q:'Click the eastern edge of the South Apron, marker DR.',label:'Entrance DR — eastern edge of the South Apron',x:922,y:425,r:55},
-{q:'Click east of Terminal 1 near the service-road side of the apron, marker DT.',label:'Entrance DT — east of Terminal 1',x:875,y:290,r:55},
-{q:'Click northeast of Terminal 1 near the North Apron and Airport Road, marker DV.',label:'Entrance DV — northeast Terminal 1 apron',x:755,y:205,r:55},
+{q:'Click Taxiway & Apron Entrance AD near Cargo East.',label:'Taxiway & Apron Entrance AD — Cargo East',x:610,y:425,r:55},
+{q:'Click Taxiway & Apron Entrance AE, north of the Air Canada apron.',label:'Taxiway & Apron Entrance AE — north of the Air Canada apron',x:678,y:250,r:55},
+{q:'Click Taxiway & Apron Entrance AF at the northwestern edge of the Air Canada gate area.',label:'Taxiway & Apron Entrance AF — northwest Air Canada gate area',x:650,y:175,r:52},
+{q:'Click Taxiway & Apron Entrance AG, west of the Air Canada gate area near Pier A Compound.',label:'Taxiway & Apron Entrance AG — west of the Air Canada gate area',x:620,y:235,r:55},
+{q:'Click Taxiway & Apron Entrance AT near the north end of Terminal 3’s North Apron.',label:'Taxiway & Apron Entrance AT — north end of Terminal 3 North Apron',x:850,y:310,r:52},
+{q:'Click Taxiway & Apron Entrance AJ on the western side of the North Apron below Terminal 3.',label:'Taxiway & Apron Entrance AJ — west side of the North Apron',x:820,y:390,r:52},
+{q:'Click Taxiway & Apron Entrance AK between the North Apron gates of Terminals 3 and 1.',label:'Taxiway & Apron Entrance AK — between the north apron gates',x:790,y:320,r:52},
+{q:'Click Taxiway & Apron Entrance AL at the western edge of Terminal 1’s North Apron.',label:'Taxiway & Apron Entrance AL — west edge of Terminal 1 North Apron',x:730,y:250,r:52},
+{q:'Click Taxiway & Apron Entrance AM near the south end of Terminal 1’s apron.',label:'Taxiway & Apron Entrance AM — south end of Terminal 1 apron',x:760,y:345,r:55},
+{q:'Click Taxiway & Apron Entrance DQ on the southeastern side of Terminal 1’s South Apron.',label:'Taxiway & Apron Entrance DQ — southeast Terminal 1 South Apron',x:820,y:460,r:55},
+{q:'Click Taxiway & Apron Entrance DR along the eastern edge of the South Apron.',label:'Taxiway & Apron Entrance DR — eastern edge of the South Apron',x:922,y:425,r:55},
+{q:'Click Taxiway & Apron Entrance DT east of Terminal 1 near the service-road side.',label:'Taxiway & Apron Entrance DT — east of Terminal 1',x:875,y:290,r:55},
+{q:'Click Taxiway & Apron Entrance DV northeast of Terminal 1 near the North Apron.',label:'Taxiway & Apron Entrance DV — northeast Terminal 1 apron',x:755,y:205,r:55},
 {q:'Click Terminal 3, north of Terminal 1.',label:'Terminal 3',x:850,y:360,r:65},
 {q:'Click the Central Deicing Facility southwest of the terminal complex.',label:'Central Deicing Facility',x:755,y:560,r:70},
 {q:'Click Cargo West, west of the main terminal complex.',label:'Cargo West',x:555,y:390,r:65},
-{q:'Click Cargo East on the Airport Road side of the airport.',label:'Cargo East',x:615,y:445,r:65},
+
 {q:'Click the northern edge of the airport where the North Service Road runs.',label:'North Service Road',x:750,y:55,r:72},
 {q:'Click the southern edge of the airport where the South Service Road runs.',label:'South Service Road',x:615,y:790,r:72},
 {q:'Click the Infield Concourse between the terminal complex and Cargo West.',label:'Infield Concourse',x:680,y:355,r:65}
