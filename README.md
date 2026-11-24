@@ -5,7 +5,7 @@ A static web app. Open `index.html` in a browser; no installation is required. T
 ## Format
 
 - Mock Exam: 26 multiple-choice airside-rule questions, three diagram questions, and 20 map-location checks under Question 30.
-- Map Test Only: a standalone randomized 20-question map session using the uploaded YYZ map. Click approximately near the requested area; a location-dependent tolerance radius is used. It includes Taxiway & Apron Entrance codes AD, AE, AF, AG, AT, AJ, AK, AL, AM, DQ, DP, DR, DT, and DV, plus Terminal 3, deicing/cargo areas, North and South Service Roads, and the Infield Concourse. Highway questions are excluded.
+- Map Test Only: a standalone randomized 20-question map session using the uploaded YYZ map. Taxiway and apron entrance clicks are checked against the projected source-map text-label position with a 30-pixel radius on the 1264 × 848 displayed map; other features keep their wider location-specific tolerance. It includes Taxiway & Apron Entrance codes AD, AE, AF, AG, AT, AJ, AK, AL, AM, DQ, DP, DR, DT, and DV, plus Terminal 3, deicing/cargo areas, North and South Service Roads, and the Infield Concourse. Highway questions are excluded.
 - The mock exam includes the same 20 location checks as Question 30.
 - Question order and choices, and map-location order, are randomized each session.
 - Passing requires all map locations correct and no more than three errors on the other questions.
