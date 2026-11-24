@@ -5,7 +5,7 @@ A static web app. Open `index.html` in a browser; no installation is required. T
 ## Format
 
 - Mock Exam: 26 multiple-choice airside-rule questions, three diagram questions, and 20 map-location checks under Question 30.
-- The main screen links directly to GTAA’s official April 2024 site map. The mock exam still includes all 20 map-location checks within Question 30.
+- Map Test Only: a standalone randomized 20-question map session using the uploaded YYZ map. Click approximately near the requested area; a location-dependent tolerance radius is used. It includes Taxiway & Apron Entrance codes AD, AE, AF, AG, AT, AJ, AK, AL, AM, DQ, DP, DR, DT, and DV, plus Terminal 3, deicing/cargo areas, North and South Service Roads, and the Infield Concourse. Highway questions are excluded.\n- The mock exam includes the same 20 location checks as Question 30.
 - Question order and choices, and map-location order, are randomized each session.
 - Passing requires all map locations correct and no more than three errors on the other questions.
 - Progress and scores are not saved.
