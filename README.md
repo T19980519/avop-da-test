@@ -7,7 +7,7 @@ A static English-language practice app for the DA test. The official test format
 - Mock Exam: 26 randomized rules questions and three randomized diagram questions (29 written questions).
 - The question bank contains 87 rules questions and six diagram questions. Questions from the previous attempt on that device are skipped when enough fresh questions remain.
 - Questions 27–29 are always three different apron-marking diagram questions that share the uploaded `Diagram_01.jpeg` illustration. Questions from the previous attempt on that device are skipped when possible.
-- Every question displays five answer choices in randomized order, including occasional valid “All of the above” answers and “None of the above” distractors.
+- Every question displays five answer choices. The first four are randomized; “All of the above” and “None of the above” always appear last when present.
 - Rule question order and answer choices are randomized each session.
 - The overall exam format allows up to three errors across 30 questions, and all map items must be correct. The map question is not scored by this app.
 - Missed questions show the selected answer, correct answer, and explanation after completion.
