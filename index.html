@@ -9,15 +9,15 @@
 </style>
 </head>
 <body><main class="shell">
-<div class="top"><div class="brand">YYZ <span style="color:var(--blue)">AVOP DA</span> Practice</div><span class="pill">Personal study · Unofficial</span></div>
+<div class="top"><div class="brand">DA Test Prep</div><span class="pill">Personal study · Unofficial</span></div>
 <section id="intro" class="hero">
-<h1>Build confidence for the DA written test.</h1><p>A randomized practice session based on the GTAA Airport Traffic Directives 2026. Review airside rules and apron markings.</p>
+<h1>YYZ AVOP DA Practice</h1><p>A randomized practice session based on the GTAA Airport Traffic Directives 2026. Review airside rules and apron markings.</p>
 <div class="grid"><div class="stat"><b>30</b><span>Questions in the official test format</span></div><div class="stat"><b>26 + 3</b><span>Written practice: rules + diagrams</span></div><div class="stat"><b>5</b><span>Answer choices per question</span></div></div>
 <div class="row"><button class="btn primary" onclick="startExam()">Start Mock Exam</button><a class="btn secondary" href="https://cdn.torontopearson.com/-/media/project/pearson/content/airport-employees/passes-and-permits/avop/2024/avop-site-map-april-2024" target="_blank" rel="noopener noreferrer">Official Site Map</a></div>
 <p class="small" style="margin-top:17px">This app covers the written portion. Use the official map link to prepare for the map question. The full test allows up to three errors, but all map items must be correct.</p>
 </section>
 <section id="quiz" class="card hidden"><div class="qhead"><span id="qnum" class="qnum"></span><span id="qcat" class="tag"></span></div><div class="progress"><i id="progress"></i></div><div id="qbody"></div><div class="row" style="justify-content:space-between;margin-top:20px"><button class="btn secondary" onclick="quitQuiz()">Exit</button><button id="next" class="btn" disabled onclick="advance()">Continue</button></div></section>
-<section id="result" class="card hidden"></section><footer class="foot"><div class="footer-meta"><span>Version 1.5.3</span><div class="updateControl"><button id="updateButton" class="btn secondary" type="button" onclick="checkForUpdates()">Update</button><span id="updateStatus" class="updateStatus" aria-live="polite"></span></div><span class="copyright">© 2026 AVOP-DA-TEST Developed by SEOKWOO KIM</span></div></footer>
+<section id="result" class="card hidden"></section><footer class="foot"><div class="footer-meta"><span>Version 1.5.4</span><div class="updateControl"><button id="updateButton" class="btn secondary" type="button" onclick="checkForUpdates()">Update</button><span id="updateStatus" class="updateStatus" aria-live="polite"></span></div><span class="copyright">© 2026 AVOP-DA-TEST Developed by SEOKWOO KIM</span></div></footer>
 </main>
 <script>
 const bank=[
@@ -121,7 +121,7 @@ const diagrams=[
 {q:'In the illustrated corridor situation, when in doubt about right-of-way, which traffic should you yield to?',type:'rightofway',o:['Traffic in the connecting corridor','Traffic in the main corridor','Only vehicles approaching from the left','The vehicle with the larger load'],a:0,e:'When in doubt, yield to drivers in the connecting corridor. (3.7.2.1)'}
 ];
 let run=[],idx=0,answers=[],selected=null;
-const APP_VERSION='1.5.3';
+const APP_VERSION='1.5.4';
 function compareVersions(a,b){let x=a.split('.').map(Number),y=b.split('.').map(Number);for(let i=0;i<Math.max(x.length,y.length);i++){let d=(x[i]||0)-(y[i]||0);if(d)return d}return 0}
 async function checkForUpdates(){let button=document.querySelector('#updateButton'),status=document.querySelector('#updateStatus');button.disabled=true;button.textContent='Checking…';status.textContent='Checking for the latest version…';try{let url=new URL(location.href);url.searchParams.set('_update',Date.now());let response=await fetch(url,{cache:'no-store'});if(!response.ok)throw new Error('Update check failed');let html=await response.text(),match=html.match(/Version\s+([0-9]+(?:\.[0-9]+)*)/);if(!match)throw new Error('Version not found');if(compareVersions(match[1],APP_VERSION)>0){status.textContent='A newer version was found. Updating…';let latest=new URL(location.pathname,location.origin);latest.searchParams.set('_refresh',Date.now());setTimeout(()=>location.replace(latest.href),500);return}status.textContent='You’re using the latest version (Version '+APP_VERSION+').'}catch(e){status.textContent='Could not check for updates. Please try again.'}finally{button.disabled=false;button.textContent='Update'}}
 function shuffle(a){let b=[...a];for(let i=b.length-1;i>0;i--){let j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}return b}
